@@ -1,0 +1,66 @@
+# Boston Housing Price Analysis (EDA)
+
+## Project Overview
+This project performs an **Exploratory Data Analysis (EDA)** on the classic **Boston Housing Dataset** to identify key factors influencing housing prices in Boston.  
+It includes data cleaning, descriptive statistics, univariate, bivariate, and multivariate analyses.
+
+## Objectives
+- Explore and visualize the dataset.
+- Identify relationships between socio-economic and environmental factors.
+- Derive insights about housing value determinants.
+
+## Key Steps
+1. Data Cleaning and Preprocessing  
+2. Univariate, Bivariate, and Multivariate Analysis  
+3. Visualization using Seaborn, Matplotlib, and Plotly  
+4. SQL integration for data querying  
+5. Documentation and GitHub publishing
+
+## Technologies Used
+- Python 3.1
+- Pandas, Numpy, Seaborn, Matplotlib, Plotly
+- SQL (MySQL or SQLite)
+- VS Code
+- Git & GitHub
+
+## Data Source
+Boston Housing Dataset (UCI Machine Learning Repository / Scikit-learn built-in dataset)
+
+## Folder Structure
+boston_housing_prices/
+│
+├── data/
+│ └── boston_housing.csv
+│
+├── notebooks/
+│ └── eda_analysis.ipynb
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── venv/
+
+
+
+
+**insights**
+
+- The Boston Housing market is significantly influenced by socio-economic factors (LSTAT, PTRATIO) and physical housing characteristics (RM).
+
+- The model suggests that wealthier, well-educated, and spacious neighborhoods tend to have higher home values.
+
+- Environmental and accessibility factors also play a secondary role — proximity to the river increases value, while excessive urbanization may lower it.
+
+- The dataset exhibits linear relationships, making it well-suited for regression modeling (especially Multiple Linear Regression).
+
+**Recommendations**
+
+- Urban planners and policymakers can use this insight to balance development and accessibility while improving education and living standards to uplift home values.
+
+- For predictive modeling:
+
+- Feature engineering on LSTAT, RM, and PTRATIO is highly recommended.
+
+- Consider checking multicollinearity before regression modeling.
+
+- Use transformations (like log or Box–Cox) for skewed variables
